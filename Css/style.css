@@ -333,7 +333,9 @@ img {
   border-radius: 100%;
   width: 30%;
 }
-
+.columnas-6 img{
+  border-radius: 30px;
+}
 /** Header **/
 
 @media (min-width: 768px) {
