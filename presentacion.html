@@ -53,24 +53,41 @@
 
     <main style="margin-top: 20px" class="contenedor">
       <hr />
-      <h4 class="centrar-texto">Que hacemos?</h4>
-
-      <div class="promo">
-        <div class="animate_animated animate__bounceInRight animate__infinite">
-          <img loanding="eager" src="img_base/code.svg" alt="Programador" />
-          <p>Diseño a gusto</p>
-        </div>
-        <div>
-          <img
-            loanding="eager"
-            src="img_base/calendario.svg"
-            alt="Calendario"
-          />
-          <p>Actualizacion diaria</p>
-        </div>
-        <div>
-          <img loanding="eager" src="img_base/economia.svg" alt="Bajo" />
-          <p>Precio Ajustado</p>
+      <div class="contenedor servicios">
+        <h4 class="centrar-texto">Que hacemos?</h4>
+        <nav>
+          <a href="#diseno">Diseño</a>
+          <a href="#act">Actualizacion</a>
+          <a href="#precio">Precio</a>
+        </nav>
+        <div class="nosotros">
+          <div id="diseno">
+            <i class="ajuste">
+              <img src="img_base/code.svg" />
+              <p>
+                Se crea una primera plantilla donde el cliente tiene las
+                facultades de exigir cambios con respectos a sus gustos o
+                funcionalidades de la pagina web
+              </p>
+            </i >
+          </div>
+          <div id="act">
+            <i  class="ajuste">
+              <img src="img_base/calendario.svg" />
+              <p>
+                Se ofrece un servicio de actualizacion planteado segun el uso
+                y(o) productos a comerciar en la misma
+              </p>
+            </i >
+          </div>
+          <div id="precio">
+            <i  class="ajuste">
+              <img src="img_base/economia.svg" />
+              <p>
+                El precio es bastante ajustado a la calidad y servicio de la web
+              </p>
+            </i >
+          </div>
         </div>
       </div>
       <hr />
@@ -161,4 +178,6 @@
       </div>
     </footer>
   </body>
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script defer src="js/asa.js"></script>
 </html>
