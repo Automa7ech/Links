@@ -71,9 +71,10 @@ body {
   height: 100%;
 }
 .promo {
-  margin: 10px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  position: relative;
 }
 .promo div {
   width: 90%;
@@ -83,10 +84,9 @@ body {
   justify-content: space-around;
   text-align: center;
 }
-.promo img{
+.promo img {
   height: 100px;
 }
-
 
 .banner_title h2 {
   color: #fff;
@@ -260,7 +260,7 @@ h2 {
   font-size: 4rem;
   line-height: 1.2;
 }
-h3{
+h3 {
   font-size: 1.5rem;
 }
 h4 {
@@ -282,7 +282,7 @@ img {
 }
 
 /** Grid **/
-.grid{
+.grid {
   margin: auto auto 30px auto;
 }
 @media (min-width: 768px) {
@@ -451,7 +451,81 @@ img {
     order: 2;
   }
 }
+/*  Tabs   */
+div.servicios {
+  margin-top: 30px;
+}
+div.servicios nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+div.servicios nav a {
+  text-decoration: none;
+  padding: 20px;
+  border: 5px solid #af64db;;
+  color: black;
+  border-top-left-radius: 20px;
+  text-align: center;
+  transition: 1s;
 
+}
+div.servicios nav a.activo {
+  background-color: #63198d;
+  border: none;
+  color: white;
+  border-top-right-radius: 20px;
+  width:100%;
+  transition: 1s;
+}
+div.nosotros {
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+  border-color: 5px solid #63198d;
+
+}
+div.nosotros > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 5px solid #63198d;
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 20px;
+  display: none;
+}
+.ajuste {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 600px) {
+  div.servicios nav a {
+    border-top-right-radius: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ajuste {
+    grid-template-columns: 1fr;
+  }
+  div.nosotros {
+    height: 500px;
+  }
+}
+.ajuste img {
+  height: 280px;
+}
+.ajuste p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #63198d;
+}
 /** Opcional **/
 
 .entrada-blog {
