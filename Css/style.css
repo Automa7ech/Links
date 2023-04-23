@@ -472,24 +472,23 @@ div.servicios nav a {
   border-top-left-radius: 20px;
   text-align: center;
   transition: 1s;
-
 }
 div.servicios nav a.activo {
   background-color: white;
   border: none;
   color: purple;
   border-top-right-radius: 20px;
-  width:100%;
+  width: 100%;
   transition: 1s;
   box-shadow: 2px solid black;
   font-size: 20px;
-
+  z-index: 2;
+  box-shadow: -0px -2px 2px 0px rgb(0, 0, 0, 0.5);
 }
 div.nosotros {
   position: relative;
   height: 300px;
   margin-bottom: 20px;
-
 }
 div.nosotros > div {
   background-color: white;
@@ -502,6 +501,7 @@ div.nosotros > div {
   border-bottom-right-radius: 30px;
   padding: 20px;
   display: none;
+  box-shadow: 0px 1px 2px 0px rgb(0, 0, 0, 0.5);
 }
 .ajuste {
   height: 100%;
@@ -629,21 +629,18 @@ div.nosotros > div {
   display: flex;
   justify-content: flex-end;
 }
-.white{
+.white {
   background-color: white;
   padding: 10px;
   border-radius: 20px;
   margin: 10px auto;
 }
-.top-right{
+.top-right {
   border-top-right-radius: 20px;
-
 }
-.top-left{
+.top-left {
   border-top-left-radius: 20px;
-  
 }
-.top{
+.top {
   border-radius: 20px;
-  
 }
