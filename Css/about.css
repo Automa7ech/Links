@@ -152,9 +152,6 @@ nav .nav-list li.btn:active a {
     padding: 7px 15px;
     font-size: 14px;
   }
-  .container {
-    padding-top: 100px;
-  }
   .social a {
     margin-right: 10px;
     margin-bottom: 10px;
@@ -178,7 +175,7 @@ section {
   align-items: center;
 }
 section h2 {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 5px;
 }
@@ -206,8 +203,6 @@ section#sec5 {
 }
 section a {
   font-weight: 300;
-}
-section > a {
   display: inline-block;
   background: transparent;
   border: 2px solid white;
@@ -233,6 +228,7 @@ section a:active {
   section {
     flex-direction: column-reverse;
     justify-content: center;
+    padding-bottom: 100px;
   }
   section img {
     width: 100%;
